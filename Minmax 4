@@ -2,8 +2,7 @@ import random
 N = random.randrange(1,10)
 print("N = ",N)
 i = 1
-x = random.randrange(1,10)
-print("x = ",x)
+x = random.randrange(1,15)
 min_x = x
 min_i = i
 print(i, " : ", x)
