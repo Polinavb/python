@@ -1,0 +1,9 @@
+import random
+N = 2 * random.randrange(1,9)
+a = [i+1 for i in range(N)]
+print("N = ",N)
+print("Массив:",a)
+K = N//2
+for i in range(0,K) :
+    a[i], a[K+i] = a[K+i], a[i]
+print("Массив изменен:",a)
