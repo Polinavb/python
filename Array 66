@@ -1,0 +1,15 @@
+import random
+N = random.randrange(2,10)
+a = [random.randrange(1,11) for i in range(N)]
+print("N:",N)
+print("Массив:",a)
+x_even = 0
+for item in a :
+    if item%2 == 0 :
+        x_even = item
+        break
+print("Первое четное число:",x_even)
+for (i, item) in enumerate(a) :
+    if item%2 == 0:
+        a[i] += x_even
+print("Массив увеличен:",a)
