@@ -1,0 +1,11 @@
+import random
+def Even(K):
+    if K%2 == 0:
+        return True
+    return False
+s = 0
+for i in range(0,10):
+    x = random.randrange(1,11)
+    print(x)
+    s += int(Even(x))
+print("Количество четных чисел:",s)
