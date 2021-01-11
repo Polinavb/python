@@ -1,0 +1,18 @@
+import random
+N = random.randrange(1,10)
+print("N = ",N)
+i = 1
+x = random.randrange(1,10)
+print("x = ",x)
+min_x = x
+min_i = i
+print(i, " : ", x)
+while  i < N:
+    i += 1
+    x = random.randrange(1,15)
+    print(i, " : ", x)
+    if x < min_x:
+        min_x = x
+        min_i = i
+print("Минимальый элемент ", min_x)
+print("Номер минимального элемента : ", min_i)
